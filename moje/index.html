@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notatnik</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="components.css">
+    <script src="https://kit.fontawesome.com/7da1bb98bc.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="wraper">
+        <div id="navbar">
+            <ul id="nav-list">
+                <li class="hover-change nav-list-element">Maro Hub</li>
+                <li class="nav-list-element">
+                    <input id="note-search" type="text" placeholder="Wyszukaj...">
+                    <button id="note-search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </li>
+                <li class="hover-change nav-list-element">
+                    Notatnik
+                </li>
+                <li class="reg-log hover-change nav-list-element">
+                    Zaloguj się
+                </li>
+                <li class="reg-log hover-change nav-list-element">
+                    Zarejestruj się
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <div class="note-card" id="new-note">
+                <p id="new-note-text">Create new note to start your journey with maroNotepad</p>
+                <button id="new-note-button">Create new note</button>
+                <div id="new-note-name">
+                    <input id="new-note-name-input" type="text" placeholder="New note name:" >
+                    <button id="new-note-name-button"><i class="fa-solid fa-check"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
